@@ -17,4 +17,4 @@ My name is Derek Taylor, I am a student at the University of Iowa. I am taking a
 
 # About This Blog
 
-My blogs will be about all the analyzing and work that I will be doing in my class. I am excited to right this blog because I find data analysis interesting and I love fantasy football. I believe I will offer a unique perspective, as someone who is starting to learn data analysis and fantasy football, I will give a fresh out look on both data analysis and fantasy football.
+My blogs will be about all the data analyzing and work that I will be doing in my class. I am excited to right this blog because I find data analysis interesting and I love fantasy football. I believe I will offer a unique perspective as someone who is starting to learn data analysis and fantasy football, I will be giving a fresh out look on both data analysis and fantasy football.
