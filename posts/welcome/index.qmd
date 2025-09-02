@@ -3,7 +3,7 @@ title: "Fantasy Football Analysis"
 author: "Derek Taylor"
 date: "9/1/2025"
 categories: [welcome, news]
-image: "fantasy football.jfif"
+image: "fantasy football.jpg"
 ---
 
 # Welcome to my Blog! {#sec-welcome}
