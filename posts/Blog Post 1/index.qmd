@@ -1,0 +1,20 @@
+---
+title: "My Fantasy Football Team"
+author: "Derek Taylor"
+date: "9/11/2025"
+categories: [News]
+image: "fantasy football.jpg"
+---
+
+# Intro {#sec-welcome}
+
+Welcome to my blog entitled, "Fantasy Football Analysis".
+This is my first blog post.
+
+# About Me
+
+My name is Derek Taylor, I am a student at the University of Iowa. I am taking a course that is called Fantasy Football: Predictive Analytics and Empiricism.
+
+# About This Blog
+
+My blogs will be about all the data analyzing and work that I will be doing in my class. I am excited to right this blog because I find data analysis interesting and I love fantasy football. I believe I will offer a unique perspective as someone who is starting to learn data analysis and fantasy football, I will be giving a fresh out look on both.
