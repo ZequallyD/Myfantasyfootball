@@ -1,5 +1,5 @@
 ---
-title: "Which NFL Pisition Gets Injured the Most"
+title: "Which Offensive NFL Pisition Gets Injured the Most"
 author: "Derek Taylor"
 date: "9/18/2025"
 categories: [fantasy football,Statistical]
@@ -55,12 +55,10 @@ It is no secret that football is a contact sport that can result in bodily harm.
 
 ## The Research {#sec-presentStudy}
 
-
+In this study I am looking to find out what position gets hurt the most? Hypothesize that the more contact heavy positions are the positions that will get hurt the most out of any other position. When I say high contact I mean anyone on the line, those in the trench's on the field, and RB because they most of they time have to run though those trench's and will result with more contact then other skill positions. I also believe that these positions are the positions get hurt the most because of the continual contact leads for more wear and tear and ultimately in injury, they might not get hit the hardest but I bet more consistent contact will out weigh how much impact the hit has.I predict that out of all the injuries in the NFL RBs will be injured the most.
 
 # Method {#sec-method}
 
-
-## Data {#sec-data}
 
 
 
