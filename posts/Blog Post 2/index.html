@@ -9,7 +9,7 @@
 <meta name="author" content="Derek Taylor">
 <meta name="dcterms.date" content="2025-09-18">
 
-<title>index – My Blog</title>
+<title>Which NFL Pisition Gets Injured the Most – My Blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -156,9 +156,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      
+      <h1 class="title">Which NFL Pisition Gets Injured the Most</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">fantasy football</div>
+                <div class="quarto-category">Statistical</div>
               </div>
                   </div>
   </div>
@@ -197,7 +198,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#sec-abstract" id="toc-sec-abstract" class="nav-link" data-scroll-target="#sec-abstract"><span class="header-section-number">2</span> Abstract</a></li>
   <li><a href="#sec-background" id="toc-sec-background" class="nav-link" data-scroll-target="#sec-background"><span class="header-section-number">3</span> Background</a>
   <ul class="collapse">
-  <li><a href="#sec-presentStudy" id="toc-sec-presentStudy" class="nav-link" data-scroll-target="#sec-presentStudy"><span class="header-section-number">3.1</span> The Present Study</a></li>
+  <li><a href="#sec-presentStudy" id="toc-sec-presentStudy" class="nav-link" data-scroll-target="#sec-presentStudy"><span class="header-section-number">3.1</span> The Research</a></li>
   </ul></li>
   <li><a href="#sec-method" id="toc-sec-method" class="nav-link" data-scroll-target="#sec-method"><span class="header-section-number">4</span> Method</a>
   <ul class="collapse">
@@ -236,7 +237,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"lme4"</span>)</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"lmerTest"</span>)</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"GGally"</span>)</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"petersenlab"</span>)</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"XICOR"</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"psych"</span>)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"DescTools"</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"psych"</span>)</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"correlation"</span>)</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"effectsize"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"GGally"</span>)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ggridges"</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"nflreadr"</span>)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"progressr"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 </div>
 </section>
@@ -251,8 +263,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="sec-background" class="level1" data-number="3">
 <h1 data-number="3"><span class="header-section-number">3</span> Background</h1>
+<p>It is no secret that football is a contact sport that can result in bodily harm. With that knowledge there is no surprise that the players in football will eventually get hurt, and with these injuries leave us as the consumers with a lot of question. From a fantasy football perspective if one of your key players get hurt then you are officially down a player for the foreseeable future and you are left fumbling around figuring out of to replace that hole you have in your team. Injuries on field can also cause in issue for the football team itself because then they could be down a star player for their whole season and will have to change their seasons plan to make up for the injury. Outside of those two perspectives you have the medical questions of how can we reduce injuries and how can we improve recovery for those players. No matter where you are at or what perspective you are looking at, injuries are a big part of football and can say a lot for the future, of sport, a career, and a season. Studying injuries is important for fantasy football because it lets you predict how long a person will be out and when they do come back will they come back at their fullest potential. Also, Studying these injuries is an important part of the sport and is something that needs to be done for improvement of said sport.</p>
 <section id="sec-presentStudy" class="level2" data-number="3.1">
-<h2 data-number="3.1" class="anchored" data-anchor-id="sec-presentStudy"><span class="header-section-number">3.1</span> The Present Study</h2>
+<h2 data-number="3.1" class="anchored" data-anchor-id="sec-presentStudy"><span class="header-section-number">3.1</span> The Research</h2>
 </section>
 </section>
 <section id="sec-method" class="level1" data-number="4">
@@ -311,56 +324,59 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
- [1] lubridate_1.9.4     forcats_1.0.0       stringr_1.5.2      
- [4] dplyr_1.1.4         purrr_1.1.0         readr_2.1.5        
- [7] tidyr_1.3.1         tibble_3.3.0        tidyverse_2.0.0    
-[10] GGally_2.4.0        ggplot2_4.0.0       lmerTest_3.1-3     
-[13] lme4_1.1-37         Matrix_1.7-3        bestNormalize_1.9.1
-[16] car_3.1-3           carData_3.0-5       broom_1.0.10       
-[19] effectsize_1.0.1    DescTools_0.99.60   psych_2.5.6        
-[22] petersenlab_1.2.0  
+ [1] progressr_0.15.1    nflreadr_1.5.0      ggridges_0.5.7     
+ [4] correlation_0.8.8   XICOR_0.4.1         lubridate_1.9.4    
+ [7] forcats_1.0.0       stringr_1.5.2       dplyr_1.1.4        
+[10] purrr_1.1.0         readr_2.1.5         tidyr_1.3.1        
+[13] tibble_3.3.0        tidyverse_2.0.0     GGally_2.4.0       
+[16] ggplot2_4.0.0       lmerTest_3.1-3      lme4_1.1-37        
+[19] Matrix_1.7-3        bestNormalize_1.9.1 car_3.1-3          
+[22] carData_3.0-5       broom_1.0.10        effectsize_1.0.1   
+[25] DescTools_0.99.60   psych_2.5.6         petersenlab_1.2.0  
 
 loaded via a namespace (and not attached):
   [1] RColorBrewer_1.1-3  rstudioapi_0.17.1   jsonlite_2.0.0     
   [4] datawizard_1.2.0    magrittr_2.0.4      TH.data_1.1-4      
   [7] estimability_1.5.1  farver_2.1.2        nloptr_2.2.1       
  [10] rmarkdown_2.29      fs_1.6.6            vctrs_0.6.5        
- [13] minqa_1.2.8         base64enc_0.1-3     butcher_0.3.6      
- [16] htmltools_0.5.8.1   haven_2.5.5         cellranger_1.1.0   
- [19] Formula_1.2-5       parallelly_1.45.1   htmlwidgets_1.6.4  
- [22] plyr_1.8.9          sandwich_3.1-1      emmeans_1.11.2-8   
- [25] rootSolve_1.8.2.4   zoo_1.8-14          lifecycle_1.0.4    
- [28] iterators_1.0.14    pkgconfig_2.0.3     R6_2.6.1           
- [31] fastmap_1.2.0       rbibutils_2.3       future_1.67.0      
- [34] numDeriv_2016.8-1.1 digest_0.6.37       Exact_3.3          
- [37] colorspace_2.1-1    Hmisc_5.2-3         timechange_0.3.0   
- [40] httr_1.4.7          abind_1.4-8         compiler_4.5.1     
- [43] rngtools_1.5.2      proxy_0.4-27        withr_3.0.2        
- [46] doParallel_1.0.17   htmlTable_2.4.3     S7_0.2.0           
- [49] backports_1.5.0     DBI_1.2.3           ggstats_0.11.0     
- [52] MASS_7.3-65         lava_1.8.1          gld_2.6.8          
- [55] tools_4.5.1         pbivnorm_0.6.0      foreign_0.8-90     
- [58] future.apply_1.20.0 nnet_7.3-20         glue_1.8.0         
- [61] quadprog_1.5-8      nlme_3.1-168        grid_4.5.1         
- [64] checkmate_2.3.3     cluster_2.1.8.1     reshape2_1.4.4     
- [67] generics_0.1.4      recipes_1.3.1       gtable_0.3.6       
- [70] tzdb_0.5.0          class_7.3-23        data.table_1.17.8  
- [73] lmom_3.2            hms_1.1.3           foreach_1.5.2      
- [76] pillar_1.11.1       mitools_2.4         splines_4.5.1      
- [79] lattice_0.22-7      survival_3.8-3      tidyselect_1.2.1   
- [82] mix_1.0-13          knitr_1.50          reformulas_0.4.1   
- [85] gridExtra_2.3       stats4_4.5.1        xfun_0.53          
- [88] expm_1.0-0          hardhat_1.4.2       timeDate_4041.110  
- [91] stringi_1.8.7       yaml_2.3.10         boot_1.3-31        
- [94] evaluate_1.0.5      codetools_0.2-20    cli_3.6.5          
- [97] rpart_4.1.24        xtable_1.8-4        parameters_0.28.2  
-[100] Rdpack_2.6.4        lavaan_0.6-19       Rcpp_1.1.0         
-[103] readxl_1.4.5        globals_0.18.0      coda_0.19-4.1      
-[106] parallel_4.5.1      gower_1.0.2         bayestestR_0.17.0  
-[109] doRNG_1.8.6.2       listenv_0.9.1       viridisLite_0.4.2  
-[112] mvtnorm_1.3-3       ipred_0.9-15        scales_1.4.0       
-[115] prodlim_2025.04.28  e1071_1.7-16        insight_1.4.2      
-[118] rlang_1.1.6         multcomp_1.4-28     mnormt_2.1.1       </code></pre>
+ [13] memoise_2.0.1       minqa_1.2.8         base64enc_0.1-3    
+ [16] butcher_0.3.6       htmltools_0.5.8.1   haven_2.5.5        
+ [19] cellranger_1.1.0    Formula_1.2-5       parallelly_1.45.1  
+ [22] htmlwidgets_1.6.4   plyr_1.8.9          sandwich_3.1-1     
+ [25] cachem_1.1.0        emmeans_1.11.2-8    rootSolve_1.8.2.4  
+ [28] zoo_1.8-14          lifecycle_1.0.4     iterators_1.0.14   
+ [31] pkgconfig_2.0.3     R6_2.6.1            fastmap_1.2.0      
+ [34] rbibutils_2.3       future_1.67.0       numDeriv_2016.8-1.1
+ [37] digest_0.6.37       Exact_3.3           colorspace_2.1-1   
+ [40] psychTools_2.5.7.22 Hmisc_5.2-3         timechange_0.3.0   
+ [43] httr_1.4.7          abind_1.4-8         compiler_4.5.1     
+ [46] rngtools_1.5.2      proxy_0.4-27        withr_3.0.2        
+ [49] doParallel_1.0.17   htmlTable_2.4.3     S7_0.2.0           
+ [52] backports_1.5.0     DBI_1.2.3           ggstats_0.11.0     
+ [55] MASS_7.3-65         lava_1.8.1          rtf_0.4-14.1       
+ [58] gld_2.6.8           tools_4.5.1         pbivnorm_0.6.0     
+ [61] foreign_0.8-90      future.apply_1.20.0 nnet_7.3-20        
+ [64] R.oo_1.27.1         glue_1.8.0          quadprog_1.5-8     
+ [67] nlme_3.1-168        grid_4.5.1          checkmate_2.3.3    
+ [70] cluster_2.1.8.1     reshape2_1.4.4      generics_0.1.4     
+ [73] recipes_1.3.1       gtable_0.3.6        tzdb_0.5.0         
+ [76] R.methodsS3_1.8.2   class_7.3-23        data.table_1.17.8  
+ [79] lmom_3.2            hms_1.1.3           foreach_1.5.2      
+ [82] pillar_1.11.1       mitools_2.4         splines_4.5.1      
+ [85] lattice_0.22-7      survival_3.8-3      tidyselect_1.2.1   
+ [88] mix_1.0-13          knitr_1.50          reformulas_0.4.1   
+ [91] gridExtra_2.3       stats4_4.5.1        xfun_0.53          
+ [94] expm_1.0-0          hardhat_1.4.2       timeDate_4041.110  
+ [97] stringi_1.8.7       yaml_2.3.10         boot_1.3-31        
+[100] evaluate_1.0.5      codetools_0.2-20    cli_3.6.5          
+[103] rpart_4.1.24        xtable_1.8-4        parameters_0.28.2  
+[106] Rdpack_2.6.4        lavaan_0.6-19       Rcpp_1.1.0         
+[109] readxl_1.4.5        globals_0.18.0      coda_0.19-4.1      
+[112] parallel_4.5.1      gower_1.0.2         bayestestR_0.17.0  
+[115] doRNG_1.8.6.2       listenv_0.9.1       viridisLite_0.4.2  
+[118] mvtnorm_1.3-3       ipred_0.9-15        scales_1.4.0       
+[121] prodlim_2025.04.28  e1071_1.7-16        insight_1.4.2      
+[124] rlang_1.1.6         multcomp_1.4-28     mnormt_2.1.1       </code></pre>
 </div>
 </div>
 
