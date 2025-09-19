@@ -1,5 +1,5 @@
 ---
-title: "Which Offensive NFL Pisition Gets Injured the Most"
+title: "Which Offensive NFL Skill Pisition Gets Injured the Most"
 author: "Derek Taylor"
 date: "9/18/2025"
 categories: [fantasy football,Statistical]
@@ -45,36 +45,31 @@ Link to AI Transcript: not applicable
 # Abstract {#sec-abstract}
 
 **Background:** 
+Injuries is an expected aspect of football but if we look at the injuries it can help us determine a players overall status and if they will ever perform as their pre-injury self, and helps us to prevent further injury.
 **Method:** 
 **Results:** 
 **Discussion:** 
 
 # Background {#sec-background}
 
-It is no secret that football is a contact sport that can result in bodily harm. With that knowledge there is no surprise that the players in football will eventually get hurt, and with these injuries leave us as the consumers with a lot of question. From a fantasy football perspective if one of your key players get hurt then you are officially down a player for the foreseeable future and you are left fumbling around figuring out of to replace that hole you have in your team. Injuries on field can also cause in issue for the football team itself because then they could be down a star player for their whole season and will have to change their seasons plan to make up for the injury. Outside of those two perspectives you have the medical questions of how can we reduce injuries and how can we improve recovery for those players. No matter where you are at or what perspective you are looking at, injuries are a big part of football and can say a lot for the future, of sport, a career, and a season. Studying injuries is important for fantasy football because it lets you predict how long a person will be out and when they do come back will they come back at their fullest potential. Also, Studying these injuries is an important part of the sport and is something that needs to be done for improvement of said sport. 
+It is no secret that football is a contact sport that can result in bodily harm. With that knowledge there is no surprise that the players in football will eventually get hurt, and with these injuries leave us as the consumers with a lot of question. From a fantasy football perspective if one of your key players get hurt then you are officially down a player for the foreseeable future and you are left fumbling around figuring out of to replace that hole you have in your team. Injuries on field can also cause in issue for the football team itself because then they could be down a star player for their whole season and will have to change their seasons plan to make up for the injury. Outside of those two perspectives you have the medical questions of how can we reduce injuries and how can we improve recovery for those players. No matter where you are at or what perspective you are looking at, injuries are a big part of football and can say a lot for the future, of sport, a career, and a season. Studying injuries is important for fantasy football because it lets you predict how long a person will be out and when they do come back will they come back at their fullest potential. Also, Studying these injuries is an important part of the sport and is something that needs to be done for improvement of said sport.
 
-## The Research {#sec-presentStudy}
+## The Research {#sec-TheResearch}
 
-In this study I am looking to find out what position gets hurt the most? Hypothesize that the more contact heavy positions are the positions that will get hurt the most out of any other position. When I say high contact I mean anyone on the line, those in the trench's on the field, and RB because they most of they time have to run though those trench's and will result with more contact then other skill positions. I also believe that these positions are the positions get hurt the most because of the continual contact leads for more wear and tear and ultimately in injury, they might not get hit the hardest but I bet more consistent contact will out weigh how much impact the hit has.I predict that out of all the injuries in the NFL RBs will be injured the most.
+In this study I am looking to find out what position gets hurt the most? Hypothesize that the more contact heavy positions are the positions that will get hurt the most out of any other position. When I say contact heavy I am looking at TE and RB because TE are on the line and go out for routes so they are most likely to make contact more and RB have to run thought the line which means they to have a high chance to make contact. I also believe that these positions are the positions that get hurt the most because of the continual contact leads for more wear and tear and ultimately in injury, they might not get hit the hardest but I bet more consistent contact will out weigh how much impact the hit has.I predict that out of all the injuries in the NFL RBs will be injured the most.
 
 # Method {#sec-method}
 
+To test my question I will get a list of all the injuries that have happened since 2009. With that list I will look at the specific positions and how many times that position got hurt, To see once in for all what position gets injured the most.
 
+# Data {#sec-data}
 
-
+First I loaded a list of all the injuries since the 2009 season
 ```{r}
-#| include: false
-#| eval: false
-
-# Run this to load the data when running the script locally (not rendering)
-load(file = "./data/player_stats_weekly.RData")
+nfl_injuries_raw <- progressr::with_progress(
+  nflreadr::load_injuries(seasons = TRUE))
 ```
-
-```{r}
-load(file = "../../data/player_stats_weekly.RData")
-```
-
-
+Then I put the data into a bar plot
 
 # Results {#sec-results}
 
@@ -86,7 +81,7 @@ load(file = "../../data/player_stats_weekly.RData")
 
 ## Strengths and Limitations {#sec-strengthsLimitations}
 
-
+The strength of my study is that it answers the question that I set out to answer, it's not the most descriptive sudy but it does answer the question. A limitation that I had is that I am still learning how to use R studio, therefore I feel I could not go into any bigger detail.
 
 ## Conclusion {#sec-conclusion}
 
