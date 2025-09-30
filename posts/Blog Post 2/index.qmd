@@ -81,7 +81,6 @@ player_stats_seasonal_offense_subset$position[which(player_stats_seasonal_offens
 player_stats_seasonal_offense_subset$player_idFactor <- factor(player_stats_seasonal_offense_subset$player_id)
 player_stats_seasonal_offense_subset$positionFactor <- factor(player_stats_seasonal_offense_subset$position)
 ```
-```
 
 
 # Results {#sec-results}
