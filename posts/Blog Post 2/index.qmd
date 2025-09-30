@@ -73,8 +73,14 @@ Link to AI Transcript: not applicable
 
 
 ```{r}
-nfl_injuries_raw <- progressr::with_progress(
-  nflreadr::load_injuries(seasons = TRUE))
+player_stats_seasonal_offense_subset <- player_stats_weekly %>% 
+  dplyr::filter(position_group %in% c("QB","RB","WR","TE") | position %in% c("K"))
+
+player_stats_seasonal_offense_subset$position[which(player_stats_seasonal_offense_subset$position == "HB")] <- "RB"
+
+player_stats_seasonal_offense_subset$player_idFactor <- factor(player_stats_seasonal_offense_subset$player_id)
+player_stats_seasonal_offense_subset$positionFactor <- factor(player_stats_seasonal_offense_subset$position)
+```
 ```
 
 
