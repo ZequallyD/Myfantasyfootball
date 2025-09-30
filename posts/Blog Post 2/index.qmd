@@ -82,6 +82,13 @@ player_stats_seasonal_offense_subset$player_idFactor <- factor(player_stats_seas
 player_stats_seasonal_offense_subset$positionFactor <- factor(player_stats_seasonal_offense_subset$position)
 ```
 
+```{r}
+cor.test(
+  ~ targets + fantasyPoints,
+  data = player_stats_seasonal_offense_subset %>% filter(position == "WR")
+)
+```
+
 
 # Results {#sec-results}
 
