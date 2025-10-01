@@ -58,12 +58,14 @@ Link to AI Transcript: not applicable
 **Discussion:** 
 
 # Background {#sec-background}
+ 
   When you think of football and skill positions what is one thing you think about. There is a great chance you think about catching the ball. When the NFL breaks down the stats of a football player there are a multitude of stats that focus solely on getting the ball and catching it. Today we will be looking at two of those stats, reception yards and targets. Reception yards is the put together total of yards at time of reception, so how many yards the ball went before being caught, and yards after catch, how many yards the player went with the ball after catching it. Targets is simply how many times the quarterback threw or handed off the football to the intended player.
   Why is looking at these stats important? It is important to look at these stats because it gives us an idea of how the player performs on the team and what role they play on the team. "Certain players fill a high-risk high-reward role, putting up 15+ yards per reception but not catching those passes at a high rate. Elite receivers do not always put up the most yards per reception, but their high catch percentage and usage leads them to be the most valuable players." (Bond, 2022) Stats like reception yards and targets help us figure out who are big time player or the consistent reliable player, especially if you are a fantasy football player. In fantasy football stats such as reception yards and targets are some of the best ways to figure out if you should keep the player or cut them, it also give you in idea of how many fantasy points that play could bring in week to week.
 
 ## The Research {#sec-TheResearch}
-  The question I will be testing today is, does reception yards and tragets correlate with more fantasy points?
 
+  The question I will be testing today is, does reception yards and targets correlate with more fantasy points? The reason I am looking into this is because I wonder if players that are more consistent make up most of the fantasy points or is the players that don't get a lot of catch but make big plays get the most fantasy points.
+  I hypothesize that the players with more consistent yards and targets will make up the most when it comes to fantasy points. I believe this because as someone who has played fantasy football it's usually the big play players that don't do well on average and tend to only have a big game every other week.
 
 # Method {#sec-method}
 
