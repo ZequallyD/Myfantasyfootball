@@ -53,8 +53,10 @@ Link to AI Transcript: not applicable
 
 **Background:** 
 
-**Method:** 
+**Method:**
+
 **Results:** 
+
 **Discussion:** 
 
 # Background {#sec-background}
@@ -84,6 +86,8 @@ player_stats_seasonal_offense_subset$player_idFactor <- factor(player_stats_seas
 player_stats_seasonal_offense_subset$positionFactor <- factor(player_stats_seasonal_offense_subset$position)
 ```
 
+## WR Tests
+
 Next I start running my correlation test starting with WR and the correlation between targets and fantasy points
 ```{r}
 cor.test(
@@ -99,6 +103,8 @@ cor.test(
   data = player_stats_seasonal_offense_subset %>% filter(position == "WR")
 )
 ```
+## RB Tests
+
 I then repeated these steps for RB and TE. Starting with RB: Targets - Fantasy Points
 ```{r}
 cor.test(
@@ -113,6 +119,9 @@ cor.test(
   data = player_stats_seasonal_offense_subset %>% filter(position == "RB")
 )
 ```
+
+## TE Tests
+
 TE: Targets - Fantasy Points
 ```{r}
 cor.test(
@@ -127,11 +136,34 @@ cor.test(
   data = player_stats_seasonal_offense_subset %>% filter(position == "TE")
 )
 ```
+## Test Between Reicieving Yards and Targets
+
+I also ran a correlation test between receiving yards and targets so we can see how the 2 stats compare with each other.
+```{r}
+cor.test(
+  ~ receiving_yards + targets,
+  data = player_stats_seasonal_offense_subset
+)
+```
 
 
 # Results {#sec-results}
 
+We will break the results down by position
 
+## WR Results {#sec-WrResults}
+ 
+  Looking at the results of the correlation tests for the WR shows results that might be expected. Starting with the correlation between targets and fantasy points resulting in a 0.6054148 meaning there is a positive moderate correlation. We can interpret this result by thinking about it this way, just because the WR is being targeted doesn't mean they will get a lot of fantasy points. Clearly the more targets a player gets the more chance for then to get fantasy points leading to that moderate correlation. 
+  Looking at the reception yards to fantasy points is a whole other story, there is a very strong positive correlation of 0.9234268. This makes sense when it comes to fantasy points because a bulk of WR points are based off of how many yards they get from catching and running after the catch with the ball. Leading to a very strong correlation. 
+  Looking at the difference between the 2 different correlations we can interpret that as not every player with a lot of reception yards has a lot of targets. Suggesting that a portion of the points from reception yards are due to the big play players.
+  
+## RB Results
+
+The RB results surprised me both scored a lower correlation than I expected. The test between targets and fantasy points had a slightly moderate positive correlation of 0.4961392, and the test between reception yards and fantasy point is a moderate positive correlation of 0.6336602. This leads me with the question, why did the results come out this way? In honesty with the type of tests I did I can't tell you what factor is causing them to have a lower correlation than with the WR because in my mind WR and RB go hand in hand when it comes to fantasy points, there like one of the same. I have 2 theories, one is because RB are duel threats meaning they can run the ball on the ground or be receivers, and two they are one of the few positions that lose points a lot due to losing yardage due to a play. Why do these theories matter to the test results because of the data I used to produce the tests a lot of RB gain most yardage on the ground so there isn't a lot of big numbers receiving yards that would relate to a lot of fantasy points; and since the RB position can be prone to losing yardage therefore getting negative points means that there will be games that they barely score any points leading to the low correlation between targets and fantasy points because they can lose points depending on the play.
+
+## TE Results
+
+The TE position makes sense with how the results came up, kind of middle of the pact. The TE on the test between targets and fantasy points had a moderately positive correlation of 0.6368617, and on the test between reception yards and fantasy points had a strong correlation of 0.8804847. The TE correlation with targets lines up with the WR because like the WR, TE make there points through catching the ball. The biggest thing to take away from the TE results is the correlation between reception yards and fantasy points and unlike the WR the TE's correlation isn't as strong. This is probably due to the fact most TE are used for short, "easy" passes to get some guaranteed yardage instead of a go long. So, the TE is more dependent on getting a touchdown to get there points unlike the WR who can get a lot of points by simply getting a lot of yards.
 
 # Discussion {#sec-discussion}
 
