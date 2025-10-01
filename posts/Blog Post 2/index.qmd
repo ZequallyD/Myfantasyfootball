@@ -1,5 +1,5 @@
 ---
-title: "Do Reception Yards and Targets mean high Fantasy Points"
+title: "Do Higher Reception Yards and Higher Targets mean higher Fantasy Points"
 author: "Derek Taylor"
 date: "9/30/2025"
 categories: [fantasy football,Statistical]
