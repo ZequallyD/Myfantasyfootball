@@ -1,5 +1,5 @@
 ---
-title: "Which Offensive NFL Position Makes The Most Fantasy Points"
+title: "Do Reception Yards and Targets mean high Fantasy Points"
 author: "Derek Taylor"
 date: "9/30/2025"
 categories: [fantasy football,Statistical]
@@ -58,7 +58,7 @@ Link to AI Transcript: not applicable
 **Discussion:** 
 
 # Background {#sec-background}
-
+  When you think of football and skill positions what is one thing you think about. There is a great chance you think about catching the ball. When the NFL breaks down the stats of a football player there are a multitude of stats that focus solely on getting the ball and catching it. Today we will be looking at two of those stats, reception yards and targets. Reception yards is the put together total of yards at time of reception, so how many yards the ball went before being caught, and yards after catch, how many yards the player went with the ball after catching it. Targets is simply how many times the quarterback threw or handed off the football to the intended player.
 
 
 ## The Research {#sec-TheResearch}
