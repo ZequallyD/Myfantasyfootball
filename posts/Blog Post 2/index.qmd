@@ -62,7 +62,7 @@ Link to AI Transcript: not applicable
   Why is looking at these stats important? It is important to look at these stats because it gives us an idea of how the player performs on the team and what role they play on the team. "Certain players fill a high-risk high-reward role, putting up 15+ yards per reception but not catching those passes at a high rate. Elite receivers do not always put up the most yards per reception, but their high catch percentage and usage leads them to be the most valuable players." (Bond, 2022) Stats like reception yards and targets help us figure out who are big time player or the consistent reliable player, especially if you are a fantasy football player. In fantasy football stats such as reception yards and targets are some of the best ways to figure out if you should keep the player or cut them, it also give you in idea of how many fantasy points that play could bring in week to week.
 
 ## The Research {#sec-TheResearch}
-
+  The question I will be testing today is, does reception yards and tragets correlate with more fantasy points?
 
 
 # Method {#sec-method}
@@ -107,7 +107,7 @@ cor.test(
 
 
 # References {#sec-references}
-
+https://sites.dartmouth.edu/sportsanalytics/2022/04/21/yards-per-reception-and-its-role-in-wide-receiver-evaluation/
 
 
 # Session Info {#sec-sessionInfo}
