@@ -51,7 +51,6 @@ Link to AI Transcript: not applicable
 I did a series of correlation test to see how well of a correlation fantasy point had to reception yards and targets. I also broke up the test by the positions WR, TE, and RB. 
 **Results:** 
 I found out the correlations vary per position, WR is as expected very strong correlation between reception yards and fantasy points but moderate when it comes to targets. TE slightly above moderate when it comes to targets correlation with fantasy points but not as strong as the WR when it come to reception yards. RB had a moderate correlation when it came to both targets and reception yards.
-
 **Discussion:** 
 Therefore in order to get a full idea of what leads to more fantasy points it'll be better to dive into one position specifically instead of an over view. But either way the results give a good starting point and idea of what to expect.
 
