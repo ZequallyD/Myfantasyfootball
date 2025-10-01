@@ -7,13 +7,7 @@ image: "fantasy football.jpg"
 ---
 
 ## Load Libraries {#sec-loadLibraries}
-```{r}
-#install.packages("remotes")
-#remotes::install_github("DevPsyLab/petersenlab")
-#remotes::install_github("FantasyFootballAnalytics/ffanalytics")
 
-#update.packages(ask = FALSE)
-```
 ```{r}
 #| message: false
 #| warning: false
@@ -52,11 +46,12 @@ Link to AI Transcript: not applicable
 # Abstract {#sec-abstract}
 
 **Background:** 
-  When determining what role a player plays on their team you have to look at a series of different stats but a some of the bigger stats to look at are reception yards and target, and they both happen to be good for looking at fantasy points.
+ When determining what role a player plays on their team you have to look at a series of different stats but a some of the bigger stats to look at are reception yards and target, and they both happen to be good for looking at fantasy points.
 **Method:**
 I did a series of correlation test to see how well of a correlation fantasy point had to reception yards and targets. I also broke up the test by the positions WR, TE, and RB. 
 **Results:** 
 I found out the correlations vary per position, WR is as expected very strong correlation between reception yards and fantasy points but moderate when it comes to targets. TE slightly above moderate when it comes to targets correlation with fantasy points but not as strong as the WR when it come to reception yards. RB had a moderate correlation when it came to both targets and reception yards.
+
 **Discussion:** 
 Therefore in order to get a full idea of what leads to more fantasy points it'll be better to dive into one position specifically instead of an over view. But either way the results give a good starting point and idea of what to expect.
 
