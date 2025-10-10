@@ -34,7 +34,7 @@ library("viridis")
 library("tidyverse")
 ```
 ```{r}
-load("../../Data/player_stats_weekly.Rdata")
+load("../../Data/player_stats_weekly.RData")
 ```
 
 # AI Disclosure {#sec-aiDisclosure}
