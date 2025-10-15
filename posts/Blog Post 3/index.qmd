@@ -142,6 +142,30 @@ cor.test(
 )
 ```
 
+```{r}
+ggplot2::ggplot(
+  data = player_stats_seasonal_offense_subset %>% filter(position == "WR"),
+  aes(
+    x = receiving_yards,
+    y = fantasyPoints
+)) +
+    geom_point() +
+  geom_smooth(
+    method = "lm",
+    color = "red" ) +
+  geom_smooth(
+    method = "gam",
+    color = "blue"
+  ) +
+  labs(
+    x = "Receiving Yards",
+    y = "Fantasy Points",
+    title = "Correlation Between Fanstasy Points and Receiving Yards"
+  )
+    
+
+```
+
 
 # Results {#sec-results}
 
