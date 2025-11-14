@@ -9,11 +9,20 @@ image: "fantasy football.jpg"
 ## Load Libraries {#sec-loadLibraries}
 
 ```{r}
+#| message: false
+#| warning: false
 
+library("petersenlab")
+library("nflreadr")
+library("mclust")
+library("plotly")
+library("tidyverse")
 ```
 
 ```{r}
-
+load(file = "../Data/player_stats_seasonal.RData") # if "rendering" (which uses the Analyses folder as the relative path)
+load(file = "../Data/players_projections_seasonal.RData") # if "rendering" (which uses the Analyses folder as the relative path)
+load(file = "../Data/nfl_playerIDs.RData") # if "rendering" (which uses the Analyses folder as the relative path)
 ```
 
 
