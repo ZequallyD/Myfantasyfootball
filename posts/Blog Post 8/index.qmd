@@ -1,42 +1,14 @@
 ---
-title: ""
+title: "A Cluster Analaysis of RB to Find Subgroups"
 author: "Derek Taylor"
-date: "9/30/2025"
+date: "11/13/2025"
 categories: [fantasy football,Statistical]
 image: "fantasy football.jpg"
 ---
 
 ## Load Libraries {#sec-loadLibraries}
 
-```{r}
-#| message: false
-#| warning: false
 
-library("lme4")
-library("lmerTest")
-library("effectsize")
-library("MuMIn")
-library("emmeans")
-library("sjstats")
-library("mgcv")
-library("AICcmodavg")
-library("bbmle")
-library("rstan")
-library("brms")
-library("cmdstanr") # todo: install.packages("cmdstanr", repos = c("https://stan-dev.r-universe.dev", getOption("repos"))); cmdstanr::check_cmdstan_toolchain(); cmdstanr::install_cmdstan()
-library("fitdistrplus")
-library("performance")
-library("parallelly")
-library("broom.mixed")
-library("tidybayes")
-library("plotly")
-library("viridis")
-library("tidyverse")
-```
-
-```{r}
-load("../../data/player_stats_weekly.RData")
-```
 
 # AI Disclosure {#sec-aiDisclosure}
 
