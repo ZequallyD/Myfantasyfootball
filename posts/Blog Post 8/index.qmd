@@ -8,6 +8,13 @@ image: "fantasy football.jpg"
 
 ## Load Libraries {#sec-loadLibraries}
 
+```{r}
+
+```
+
+```{r}
+
+```
 
 
 # AI Disclosure {#sec-aiDisclosure}
