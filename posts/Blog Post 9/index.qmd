@@ -7,6 +7,20 @@ image: "fantasy football.jpg"
 ---
 
 ## Load Libraries {#sec-loadLibraries}
+```{r}
+#| message: false
+#| warning: false
+
+library("petersenlab")
+library("psych")
+library("nFactors")
+library("lavaan")
+library("lavaanPlot")
+library("lavaangui")
+library("GGally")
+library("GPArotation")
+library("tidyverse")
+```
 
 
 # AI Disclosure {#sec-aiDisclosure}
@@ -36,9 +50,12 @@ Link to AI Transcript: not applicable
 The question I want to answer is what factors determine the best TE. My hypothesis is that there will be mainly 3 factors that we can use to determine what makes a good TE. I say 3 because I have already seen a factor analysis on QB and WR both having 3 significant factors. Since I am doing the a similar analysis I am assuming the number of factors will be the same, I will say I do not know what the factors will be but that is what I am to find out.
 
 # Method {#sec-method}
+ 
+ First you want to load your data.
+```{r}
 
-
-# Data {#sec-data}
+```
+ 
 
 
 # Results {#sec-results}
