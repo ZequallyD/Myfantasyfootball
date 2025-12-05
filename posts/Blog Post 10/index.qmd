@@ -52,7 +52,6 @@ I hypothesize that no matter how dear I hold these players to my heart they were
  
  First you want to load your data.
 ```{r}
-load(file = "../Data/player_stats_weekly.RData") # if "rendering" (which uses the Analyses folder as the relative path)
 load(file = "../Data/player_stats_seasonal.RData") #if "rendering" (which uses the Analyses folder as the relative path)
 ```
  
