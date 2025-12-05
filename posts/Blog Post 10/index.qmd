@@ -1,25 +1,13 @@
 ---
-title: "Factor Analysis of TE"
+title: "Time Series Analysis"
 author: "Derek Taylor"
-date: "11/20/2025"
+date: "12/04/2025"
 categories: [fantasy football,Statistical]
 image: "fantasy football.jpg"
 ---
 
 ## Load Libraries {#sec-loadLibraries}
-```{r}
-#| message: false
-#| warning: false
 
-library("petersenlab")
-library("psych")
-library("nFactors")
-library("lavaan")
-library("lavaanPlot")
-library("GGally")
-library("GPArotation")
-library("tidyverse")
-```
 
 
 # AI Disclosure {#sec-aiDisclosure}
@@ -41,12 +29,11 @@ Link to AI Transcript: not applicable
 
 # Background {#sec-background}
 
- In this post we will be looking at a factor analysis for TE. To do that we must first ask what is a factor analysis? A "factor analysis is a statistical method used to identify underlying relationships among a large set of variables." (Hussan, 2024) "Factor Analysis works by reducing the number of variables in your data and identifying the underlying factors that explain the correlations between them." (Eric, 2023) So, say we are trying to diagnose someone who is continually sad or has a long streak of feeling sad, we would call that a variable, and if we give them a diagnosis of a depressive disorder then that would be the factor. That's how a factor analysis works we take something we can see and use that to determine why we see it, but how does a factor analysis help us with sports or football.
- Factor analysis when it comes to sports is a great way to find any statistical relationships between variables, like trying to find out what factor determines how well a QB performs throughout his career, and it could be used as a scout tool to figure out the best overall performer could be for your team.
+ 
 
 ## The Research {#sec-TheResearch}
 
-The question I want to answer is what factors determine the best TE. My hypothesis is that there will be mainly 3 factors that we can use to determine what makes a good TE. I say 3 because I have already seen a factor analysis on QB and WR both having 3 significant factors. Since I am doing the a similar analysis I am assuming the number of factors will be the same, I will say I do not know what the factors will be but that is what I am to find out.
+
 
 # Method {#sec-method}
  
@@ -65,9 +52,6 @@ The question I want to answer is what factors determine the best TE. My hypothes
  
 # References {#sec-references}
 
-Hassan, M. (2024, November 18). Factor Analysis - steps, methods and examples - Research method. Research Method. https://researchmethod.net/factor-analysis/
-
-J, E. (2023, September 15). Factor analysis: From novice to expert in simple steps. Datarundown. https://datarundown.com/factor-analysis/
 
 # Session Info {#sec-sessionInfo}
 
