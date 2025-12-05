@@ -8,7 +8,19 @@ image: "fantasy football.jpg"
 
 ## Load Libraries {#sec-loadLibraries}
 
+```{r}
+#| message: false
+#| warning: false
 
+library("petersenlab")
+library("xts")
+library("zoo")
+library("forecast")
+library("brms")
+library("rstan")
+library("plotly")
+library("tidyverse")
+```
 
 # AI Disclosure {#sec-aiDisclosure}
 
@@ -40,10 +52,10 @@ I hypothesize that no matter how dear I hold these players to my heart they were
  
  First you want to load your data.
 ```{r}
-
+load(file = "../Data/player_stats_weekly.RData") # if "rendering" (which uses the Analyses folder as the relative path)
+load(file = "../Data/player_stats_seasonal.RData") #if "rendering" (which uses the Analyses folder as the relative path)
 ```
  
-
 
 # Results {#sec-results}
 
