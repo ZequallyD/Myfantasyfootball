@@ -1,5 +1,5 @@
 ---
-title: "Time Series Analysis"
+title: "Time Series Analysis of Dallas Cowboy Players"
 author: "Derek Taylor"
 date: "12/04/2025"
 categories: [fantasy football,Statistical]
