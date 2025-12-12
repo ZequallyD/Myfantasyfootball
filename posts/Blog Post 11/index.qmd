@@ -31,11 +31,14 @@ Link to AI Transcript: not applicable
 
 # Background {#sec-background}
 
- For background I am doing these blog posts for a class I am actively taking this semester of college and this week was our last week of class so I thought it would be neat to compare my team at the beginning of the season to the team now. I also plan on giving some background information on why I picked up certain players and see if it was actually worth picking them up or if there was some players I should of let go. 
+ For background I am doing these blog posts for a class I am actively taking this semester of college and this week was our last week of class so I thought it would be neat to compare my team at the beginning of the season to the team now. I also plan on giving some background information on why I picked up certain players and see if it was actually worth picking them up or if there was some players I should of let go. So, this post will be about comparing players which is a good way to see who is better and looking over and analyzing heuristics and cognitive bias. A really good definition of heuristics and cognitive bias "Cognitive biases and heuristics are two terms that are often used interchangeably, but they have different meanings. A cognitive bias is a systematic error in thinking that can affect decision-making, while a heuristic is a mental shortcut that can help simplify decision-making. Both cognitive biases and heuristics can impact how people perceive and interpret information, and they can influence the choices they make." (Brett, 2023) So, heuristics and cognitive bias can play a big rule in fantasy football and football decision makings, but they can also lead us astray putting you in a worse situation than when you began. So let's see if I was lead astray by my heuristics and cognitive bias's.
+
+
 
 ## The Research {#sec-TheResearch}
 
-
+The question I aim to answer is is my fantasy football team better than at the beginning of the season and how did my own heuristics and cognitive bias's affect my decision making? I hypothesize that my team is slightly better but the data won't say that. I say this because, first off, my
+main team still consists of a mostly the same players, with only three positions in a constant transition. Second, is that my team has a lot of player that are good right now but were overall mediocre or weren't the best at the beginning of the season, so the data will probably show that they weren't the best. When it comes to my heuristics and cognitive bias I hypothesize that they probably impacted my decision making more than I think.
 
 # Method {#sec-method}
  
