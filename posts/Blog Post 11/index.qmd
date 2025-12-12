@@ -31,7 +31,7 @@ Link to AI Transcript: not applicable
 
 # Background {#sec-background}
 
- For background I am doing these blog posts for a class I am actively taking this semester of college and this week was our last week of class so I thought it would be neat to compare my team at the beginning of the season to the team now. I also plan on giving some background information on why I picked up certain players and see if it was actually worth picking them up or if there was some players I should of let go. So, this post will be about comparing players which is a good way to see who is better and looking over and analyzing heuristics and cognitive bias. A really good definition of heuristics and cognitive bias "Cognitive biases and heuristics are two terms that are often used interchangeably, but they have different meanings. A cognitive bias is a systematic error in thinking that can affect decision-making, while a heuristic is a mental shortcut that can help simplify decision-making. Both cognitive biases and heuristics can impact how people perceive and interpret information, and they can influence the choices they make." (Brett, 2023) So, heuristics and cognitive bias can play a big rule in fantasy football and football decision makings, but they can also lead us astray putting you in a worse situation than when you began. So let's see if I was lead astray by my heuristics and cognitive bias's.
+ For background I am doing these blog posts for a class I am actively taking this semester of college and this week was our last week of class so I thought it would be neat to compare my team at the beginning of the season to the team now. I also plan on giving some background information on why I picked up certain players and see if it was actually worth picking them up or if there was some players I should of let go. So, this post will be about comparing players which is a good way to see who is better and looking over and analyzing heuristics and cognitive bias. A really good definition of heuristics and cognitive bias "Cognitive biases and heuristics are two terms that are often used interchangeably, but they have different meanings. A cognitive bias is a systematic error in thinking that can affect decision-making, while a heuristic is a mental shortcut that can help simplify decision-making. Both cognitive biases and heuristics can impact how people perceive and interpret information, and they can influence the choices they make." (Brett, 2024) So, heuristics and cognitive bias can play a big rule in fantasy football and football decision makings, but they can also lead us astray putting you in a worse situation than when you began. So let's see if I was lead astray by my heuristics and cognitive bias's.
 
 
 
@@ -56,7 +56,7 @@ main team still consists of a mostly the same players, with only three positions
  
 # References {#sec-references}
 
-
+Brett. (2024, October 5). What Are Cognitive Biases & Heuristics: A Clear Explanation. Minimalism Fitness. https://minimalismfitness.com/what-are-cognitive-biases-and-heuristics/
 
 # Session Info {#sec-sessionInfo}
 
